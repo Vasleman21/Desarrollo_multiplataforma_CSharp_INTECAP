@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="OperacionesMatematicas.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry Placeholder="Ingrese primer número"
+                x:Name="PrimerCampo"
+                Keyboard="Numeric"/>
+            <Entry Placeholder="Ingrese segundo número"
+                x:Name="SegundoCampo"
+                Keyboard="Numeric"/>
+            <Button Text="Aplicar suma"
+                    Clicked="ejecutarSuma"/>
+            <Label Text="Texto resultado"
+                x:Name="TextoResultado"
+                FontSize="20"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

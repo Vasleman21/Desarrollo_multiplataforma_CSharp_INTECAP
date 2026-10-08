@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DescuentoGeneralAfiliado.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry Placeholder="Total:"
+                x:Name="campoTotal"
+                Keyboard="Numeric"/>
+
+            <Entry Placeholder="Tipo de cliente:"
+                x:Name="campoTipoCliente"
+                Keyboard="Text"/>
+
+            <Entry Placeholder="Tipo de pago:"
+                x:Name="campoTipoPago"
+                Keyboard="Text"/>
+
+            <Button Text="Determinar total a pagar"
+                    Clicked="determinarTotal"/>
+
+            <Label Text=""
+                    x:Name="textoPresentarDescuentoRecargo"/>
+                    
+            <Label Text="Total a pagar: "
+                    x:Name="textoPresentarTotal"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

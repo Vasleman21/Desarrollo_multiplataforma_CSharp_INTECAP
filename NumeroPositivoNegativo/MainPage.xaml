@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumeroPositivoNegativo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry Placeholder="Ingresar un número:"
+                x:Name="campoNumero"
+                Keyboard="Numeric"/>
+            <Button Text="Determinar número"
+                    Clicked="detectarNumeroPositivoNegativo"/>
+            <Label Text="Resultado"
+                x:Name="textoResultado"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
