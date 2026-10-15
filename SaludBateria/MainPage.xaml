@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaludBateria.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry Placeholder="Porcentaje actual"
+                    x:Name="campoPorcentajeActual"
+                    Keyboard="Numeric"/>
+            <Entry Placeholder="Consumo por hora"
+                    x:Name="campoConsumoHora"
+                    Keyboard="Numeric"/>
+            <Button Text="Analizar salud de batería"
+                    Clicked="analizarSaludBateria"/>
+            <StackLayout
+                x:Name="resultadoAnalisis"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
