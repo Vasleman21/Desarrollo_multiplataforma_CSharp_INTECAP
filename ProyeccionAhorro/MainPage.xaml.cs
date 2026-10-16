@@ -1,5 +1,4 @@
-﻿using Android.App;
-
+﻿
 namespace ProyeccionAhorro;
 
 public partial class MainPage : ContentPage
